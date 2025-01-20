@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+}
+#nav{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+#nav1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#circle1{
+    height: 25px;
+    width: 25px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+}
+#circle2{
+    height: 25px;
+    width: 25px;
+    background-color: rgb(50, 50, 51);
+    border-radius: 50%;
+}
+#nav2{
+    display: flex;
+    gap: 25px;
+}
+#nav2 h4{
+    font-weight: 600;
+    font-size: 14px;
+}
+#nav2 h5{
+    display: none;
+    font-family: "M PLUS Rounded 1c", serif;
+}
+
+#nav h4 span{
+    color: gray;
+    margin-left: 3px;
+}
+
+#nav3{
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+    gap: 50px;
+    padding: 0px 50px;
+}
+#nav3 h3{
+    font-weight: 600;
+    color: grey;
+    font-size: 15px;
+    font-family: "M PLUS Rounded 1c", serif;
+}
+#center{
+    height: calc(100% - 120px);
+    width: 100%;
+}
+#text-content{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+#text-content::-webkit-scrollbar{
+    background-color: transparent;
+    height: 7px;
+}
+#text-content::-webkit-scrollbar-thumb{
+    background-color: orangered;
+}
+.elem{
+    flex-shrink: 0;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.elem h1{
+    font-size: 8vw;
+    font-weight: 200;
+    font-family: "Macondo", serif;
+}
+#image{
+    height: 60%;
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+}
+
+#image::-webkit-scrollbar{
+    display: none;
+}
+
+#image img{
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+
+@media (max-width:600px){
+    #main{
+        height: 100%;
+        width: 100%;
+    }
+    #nav{
+        height: 40px;
+        padding: 0 5px;
+    }
+    #circle1{
+        height: 20px;
+        width: 20px;
+        background-color: rgb(0, 0, 0);
+        border-radius: 50%;
+    }
+    #circle2{
+        height: 20px;
+        width: 20px;
+        background-color: rgb(50, 50, 51);
+        border-radius: 50%;
+    }
+    #nav2{
+        display: flex;
+        gap: 15px;
+    }
+    #nav2 h4{
+        font-weight: 500;
+        font-size: 12px;
+        display: none;
+    }
+    #nav2 h4:nth-child(1){
+        display: initial;
+        margin-right: 5px;
+    }
+    
+    #nav h4 span{
+        color: gray;
+        margin-left: 3px;
+    }
+    #nav2 h5{
+        display: initial;
+        font-weight: 600;
+    }
+    #nav3{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        /* background-color: brown; */
+        height: 40px;
+        width: 100%;
+        padding: 0px 6px;
+        gap: 10px;
+    }
+    #nav3 h3{
+        font-weight: 600;
+        color: grey;
+        font-size: 11px;
+    }
+    #center{
+        height: calc(100% - 80px);
+        width: 100%;
+    }
+    #text-content{
+        height: 35%;
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+    #text-content::-webkit-scrollbar{
+        background-color: transparent;
+        height: 7px;
+    }
+    #text-content::-webkit-scrollbar-thumb{
+        background-color: orangered;
+    }
+    .elem{
+        flex-shrink: 0;
+        height: 100%;
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0px 10px;
+    }
+    .elem h1{
+        font-size: 19vw;
+        font-weight: 200;
+    }
+    #image{
+        height: 60%;
+        width: 100%;
+        display: flex;
+        overflow-x: auto;
+    }
+    
+    #image::-webkit-scrollbar{
+        display: none;
+    }
+    
+    #image img{
+        flex-shrink: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
